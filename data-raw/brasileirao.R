@@ -10,5 +10,6 @@ download.file(
 
 brasileirao <- read_csv("data-raw/csv/brasileirao.csv")
 
+# Arrumação dos dados
 
 write_rds(brasileirao, "data/brasileirao.rds")
