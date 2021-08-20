@@ -1,0 +1,25 @@
+---
+title: "Análise mandante"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Nesse relatório bla bla bla
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+source("../R/grafico.R")
+source("../R/import.R")
+
+brasileirao <- importar_dados_bra("../data/brasileirao.rds")
+
+brasileirao %>%
+  fazer_grafico_mandante()
+```
+
